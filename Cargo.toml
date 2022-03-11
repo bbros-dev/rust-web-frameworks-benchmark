@@ -1,0 +1,23 @@
+[workspace]
+
+members = [
+    "actix",
+    "astra",
+    "axum",
+    "base-h1",
+    "base-h2",
+    "base-smol",
+    "base-tiny-http",
+    "base-tokio",
+    "gotham",
+    "hyper",
+    "iron",
+    "nickel",
+    "poem",
+    "rocket",
+    "salvo",
+    "thruster",
+    "tide",
+    "trillium",
+    "warp"
+    ]

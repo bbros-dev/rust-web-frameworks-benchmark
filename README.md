@@ -110,7 +110,7 @@ Transfer/sec:     47.57MB
 _Requests/sec:_ `115231.95` and _Latency:_ `412.75us`
 
 ```txt
-Running 8s test @ http://127.0.0.1:8000
+Running 8s test @ http://127.0.0.1:3000
   4 threads and 200 connections
   Thread Stats   Avg      Stdev     Max   +/- Stdev
     Latency   412.75us    1.35ms 204.10ms   99.83%

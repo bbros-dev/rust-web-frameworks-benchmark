@@ -1,13 +1,15 @@
-#![feature(proc_macro_hygiene, decl_macro)]
-
 #[macro_use]
 extern crate rocket;
 
 #[get("/")]
-fn index() -> &'static str {
-    "Hello, world!"
+fn hello() -> &'static str {
+    "Hello, World!"
 }
 
-fn main() {
-    rocket::ignite().mount("/", routes![index]).launch();
+#[launch]
+fn rocket() -> _ {
+    let figment = rocket::Config::figment()
+        .merge(("port", 3000))
+        .merge(("address", "127.0.0.1"));
+    rocket::custom(figment).mount("/", routes![hello])
 }
